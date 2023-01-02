@@ -1,0 +1,904 @@
+@import url('https://fonts.cdnfonts.com/css/blacksword');
+
+*{
+    box-sizing: border-box;
+}  
+body{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/**************** navbar *******************/
+input[type=checkbox]{
+    display: none;
+} 
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+.nav{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 6% !important;
+    /* padding-left: 3px !important; */
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%), 
+                0 2px 2px rgb(0 0 0 / 15%), 
+                0 4px 4px rgb(0 0 0 / 15%), 
+                0 8px 8px rgb(0 0 0 / 15%);
+    overflow: hidden;
+}
+.nav .icon {
+    display: none;
+}
+.nav > .logo{
+    width: 9rem;
+    height: 2rem;
+}
+.nav > .links > ul li a{
+    color: #0d404f !important;
+    line-height: 40px;
+    font-size: 15px;
+    display: block;
+    padding: 0 10px !important;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.nav > .links > ul{
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin-top: 5px;    
+}
+.nav > .links > ul li{
+    display: inline-block;
+}
+
+/* .line-1 {
+    height: 1.5px;
+    background: #0D404F;   
+} */
+.nav_box_right{
+    display: flex;
+    align-items: center;
+    
+}
+.icons_nav{
+    margin-left: 10px;
+    width: 20px;
+}
+.login-button{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0D404F;
+    /* border: 1.5px solid #C7B198; */
+    border-radius: .3em;
+    padding: 0.4rem 1rem;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center; 
+    align-content: center;
+    margin-left: 25px;
+    width: 8.5rem;
+}
+.login-button:hover,.btn_contact:hover{
+    border: 1px solid #0D404F;
+    background-color: #fff;
+    color: #0D404F;
+}
+/**************** header ***************/
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Corinthia:wght@700&family=Merienda&family=Rajdhani:wght@500&display=swap');
+.header{
+    position: relative;
+    height: 100vh;
+}
+.mySlides {
+    display: none;
+}
+.box_dot {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin:-26rem 1rem;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin-top: 0.5rem !important;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+.mySlides img {
+    vertical-align: middle;
+}
+.header img{
+    width: 100%;
+    height: 100vh;
+}
+.header .title{
+    position: absolute;
+    top: 48%;
+    left: 30%;
+    right: 30%;
+    color: #fff;
+    text-align: center;
+}
+.header .title h1{
+    font-size: 55px;
+    text-transform: uppercase;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.header .title h3{
+    position: relative;
+    top: -33px;
+    font-size: 35px;
+    color: #CDAC00;
+    font-family: 'Blacksword', sans-serif;
+}
+.box_Decouvrir{
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    align-items: center;
+    padding: 1rem 4em;
+    background-color: #0D404F;
+    color: #fff;
+}
+.box_Decouvrir h1{
+    font-size: 30px;
+    font-family: 'Blacksword', sans-serif;
+}
+.btn_decouvrir{
+    height: 57px;
+    background-color: #CDAC00;
+    color: #0D404F;
+    text-align: center;
+    padding: 1rem 6rem;
+    font-weight: 500;
+    font-size: 15px;
+    /* font-family: 'Poppins'; */
+    position: relative;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    border: 1px solid #CDAC00;
+    border-radius: 7px;
+    justify-content: center;
+    text-transform: unset;
+    margin-right: 35px;
+    letter-spacing: 2px;
+    gap: 10px;
+}
+.btn_decouvrir img{
+    margin-left: 15px;
+}
+.btn_decouvrir:hover::before,.btn_decouvrir:hover::after{
+    width: 100%;
+    transition: 800ms ease all;
+}
+.btn_decouvrir::before,.btn_decouvrir::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: 400ms ease all;
+}
+.btn_decouvrir:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+.btn_decouvrir:hover {
+    color: #fff;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+.arrow_link {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+}
+.slider_title {
+    text-align: center;
+    font-family: 'Frank Ruhl Libre';
+    /* font-style: normal; */
+    /* font-weight: 800; */
+    font-size: 100px;
+    letter-spacing: 2px;
+    line-height: 39%;
+    text-align: center;
+    text-shadow: -1px 1px 3px #000;
+    color: #FFFFFF;
+}
+.icon_btn{
+    color: #0D404F;
+    font-size: 30px;
+}
+.icon_btn2{
+    color: #fff;
+    font-size: 30px;
+}
+/* ////////about ///////////// */
+.layout_padding {
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+.about_section .img_container .img-box img {
+    width: 100%;
+}
+.img_container{
+    margin-left: -45px;
+}
+.heading_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+.about_section .detail-box {
+    background-color: #ffffff;
+    padding: 44px 25px;
+    position: relative;
+    top: 4.8vh;
+}
+.heading_container h2 {
+    position: relative;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    color: #0D404F;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+}
+.heading_container h3{
+    color: #CDAC00;
+    position: absolute;
+    font-size: 35px;
+    top: 20px;
+    font-family: 'Blacksword', sans-serif;
+}
+.about_section .detail-box p {
+    margin-top: 20px;
+}
+.box_btn_1{
+    margin-top: 3rem;
+}
+.box_btn_1,.box_btn_2{
+    display: flex;
+}
+
+.btn_propos ,.btn_voyages{
+    background-color: #CDAC00;
+    color: #0D404F;
+    text-decoration: none;
+    border-radius: .3em;
+    padding: 0.4rem 1rem;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    margin-left: 25px;
+    width: 9rem;
+}
+.btn_Votre,.btn_Inscriptio{
+   border: 1px solid #0D404F;
+   color: #0D404F;
+   text-decoration: none;
+   border-radius: .3em;
+   padding: 0.4rem 1rem;
+   padding-bottom: 10px;
+   font-size: 1rem;
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   margin: 0;
+   align-items: center;
+   align-content: center;
+   margin-left: 25px;
+   width: 10rem;
+}
+.btn_propos:hover{
+    color: #0D404F;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+.btn_propos:before, .btn_propos:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #0D404F;
+    transition: 400ms ease all;
+}
+.btn_propos:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+.btn_propos:hover::before,.btn_propos:hover::after{
+    width: 100%;
+    transition: 800ms ease all;
+}
+.btn_Votre {
+    background-color: transparent;
+    color: #0D404F;
+    text-align: center;
+    padding: 8px 1rem;
+    font-size: 14px;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    border: 1px solid #0D404F;
+    border-radius: 10px;
+    justify-content: center;
+    text-transform: unset;
+    gap: 10px;
+}
+.btn_Votre:hover path{
+    fill: #fff !important;
+    color: #fff !important;
+
+}
+.btn_Votre:hover{
+  box-shadow: inset 0 0 0 2em  #0D404F;
+  background-color: #0D404F;
+  color: #fff !important;
+  fill: white !important;
+}
+/* /////////////////////////////////// */
+.box{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin-top: 150px;
+    margin-bottom: 90px;
+}
+.box_{
+    background-size: contain !important;
+}
+.box_img_Inscription{
+    
+    height: 70vh;
+}
+.box_img_Inscription img{
+    width: 100%;
+    height: 70vh;
+}
+.box_content{
+    background-color: white;
+    padding: 50px;
+    margin-top: 370px;
+}
+.box_content p{
+    margin-top: 5%;
+}
+.box_content h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #0D404F;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.box_content h3{
+    font-family: 'Blacksword', sans-serif;
+    color: #CDAC00;
+    position: relative;
+    top: -25px;
+    font-size: 3.5rem;
+}
+.box_btn_2{
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+.btn_voyages{
+    padding: 12px 17px;
+    width: 11rem;
+}
+/* //////////////////////////// */
+.voyage_h {
+    background: rgba(13, 64, 79, 0.38);
+    padding: 10px;
+    width: 65%;
+}
+.voyage_dec {
+    color: #fff;
+    padding: 50px;
+    background: rgba(13, 64, 79, 0.77);
+}
+/* .services_voyage_title {
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 700;
+} */
+.sous_titre {
+    position: relative;
+    top: -2rem;
+    font-family: 'Blacksword', sans-serif;
+    font-style: normal;
+    font-size: 46px;
+    line-height: 154%;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    color: #CDAC00;
+}
+/* .services1_desc {
+    color: #fff;
+    letter-spacing: 0.2px;
+    font-size: 13px;
+    line-height: 26px;
+    text-align: justify;
+    font-weight: 400;
+} */
+.btn_coach{
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    /* padding: 12px 4rem; */
+    width: 12rem;
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    transition: all .3s ease-in-out;
+    border: 1px solid #fff;
+    justify-content: center;
+    text-transform: unset;
+    gap: 10px;
+}
+.btn_coach:hover{
+    background-color: #CDAC00;
+    border-color: #CDAC00;
+    color: #fff !important;
+    fill: white !important;
+    box-shadow: inset 0 0 0 2em  #CDAC00;
+    }
+.btn_propos,.btn_propos2{
+    padding: 12px 22px;
+    width: 11rem;
+    transition: all .3s ease-in-out;
+    position: relative;
+    justify-content: center;
+    text-transform: unset;
+    gap: 10px;
+    background-color: #CDAC00;
+    color: #fff;
+    text-align: center;
+    /* padding: 8px 50px; */
+    /* font-weight: 500; */
+    /* font-size: 14px; */
+    align-items: center;
+    transition: all .3s ease-in-out;
+    border: 0px solid #0D404F;
+    border-radius: 7px;
+    position: relative;
+    justify-content: center;
+    text-transform: unset;
+    /* margin-right: 35px; */
+    /* letter-spacing: 2px;
+    line-height: 40px; */
+    gap: 10px;
+}
+
+.btn_propos2:before, .btn_propos2:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: 400ms ease all;
+}
+.btn_propos2:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+.btn_propos2:hover{
+    color: #fff;
+    background: transparent;
+     box-shadow:none;
+     border: none;
+}
+.btn_propos2:hover::before,.btn_propos2:hover::after{
+    width: 100%;
+    transition: 800ms ease all;
+}
+/* ///////////////////////////// */
+.img_box{
+    position: relative;
+    /* width: 50%; */
+    background-size: contain;
+    transition: all 2s ease;
+    background-repeat: no-repeat;
+    background-position: inherit !important;
+    min-height: 710px;
+}
+.about_section2{  
+    margin-bottom: 300px;
+}
+.about_section .about_content{
+    position: relative;
+    min-height: 440px;
+    top: 50%;
+    z-index: 9;
+    right: 9rem;
+    width: 100%;
+    background-color: #fff;
+    transform: translateY(-50%);
+    padding: 32px 54px;
+}
+/* ///////////////////////////////// */
+section.welcome {
+    min-height: 560px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* margin-top: -200px; */
+}
+section.welcome::before {
+    content: '';
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.services_voyage_title {
+    color: #fff;
+    font-family: 'Frank Ruhl Libre', serif;
+    /* font-size: 40px; */
+    line-height: 50px;
+    position: relative;
+    font-weight: 700;
+}
+.sous_titre {
+    position: relative;
+    font-family: 'Blacksword', sans-serif;
+    font-style: normal;
+    /* font-weight: 600; */
+    top: -2.2rem;
+    /* font-size: 46px; */
+    line-height: 154%;
+    margin-left: 3px;
+    display: flex;
+    align-items: center;
+    color: #CDAC00;
+}
+.services1_desc {
+    position: relative;
+    color: #fff;
+    letter-spacing: 0.2px;
+    /* font-size: 13px; */
+    line-height: 26px;
+    text-align: justify;
+    font-weight: 400;
+    margin-top: 45px;
+}
+.btn_services_1 {
+    height: 65px;
+    background-color: #CDAC00;
+    color: #0D404F;
+    text-align: center;
+    padding: 8px 50px;
+    font-weight: 500;
+    font-size: 15px;
+    font-family: 'Poppins';
+    position: relative;
+    align-items: center;
+    /* transition: all .3s ease-in-out; */
+    border: 1px solid #CDAC00;
+    border-radius: 7px;
+    justify-content: center;
+    text-transform: unset;
+    margin-right: 35px;
+    letter-spacing: 2px;
+    gap: 10px;
+}
+.btn_services_right_1 {
+    position: relative;
+}
+/* ///////////////////////////// */
+.cards{
+    margin-top: 7rem !important;
+    margin-bottom: 7rem;
+}
+.card{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    height: 28rem;
+    width: 22rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.card:hover .footer_card{
+    opacity: 0;
+    height: 0%;
+}
+.card:hover .details{
+    opacity: 1;
+    height: 100%;
+}
+.details{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: center; */
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background: #0D404F;
+    color: #fff;
+    opacity: 0;
+    transition: 0.5s ease;
+    padding: 3rem;
+    /* position: relative; */
+}
+.details p{
+    font-size: 15px;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+.details .card_title{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+   
+}
+.details .card_title{
+    font-size: 25px;
+}
+.details .card_sous_titre{
+    font-family: 'Blacksword', sans-serif;
+    position: absolute;
+    top: 4.4rem;
+    color: #CDAC00;
+}
+.footer_card{
+    background: rgba(13, 64, 79, 1);
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: hard-light;
+    padding: 10px;
+    margin-bottom: 0%;
+}
+.card h4{
+    width: 4rem;
+    color: #fff;
+    text-align: center;
+}
+.footer_card p{
+    margin-bottom: 0px;
+}
+.card_btn{
+    margin-left: 0% !important;
+    width: 11rem;
+}
+/* /////////////////////////////// */
+.services{
+    text-align: center;
+    color: #fff;
+    background-color: #0D404F;
+    height: 21rem;
+    
+}
+.services .services_title{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    position: relative;
+    top: 30px;
+}
+.services_sous_titre{
+    font-family: 'Blacksword', sans-serif;
+    position: relative;
+    top: 0.7rem;
+    color: #CDAC00;
+}
+/* ///////////////////////////////// */
+.contact{
+    margin: 0px 6rem;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    top: 7rem;
+}
+.frm-concact {
+    position: relative;
+    width: fit-content;
+    margin-bottom: 70px;
+}
+.nl_email {
+    width: 35rem;
+    padding: 14px;
+    border-radius: .3em;
+    font-size: 12px;
+    border: 0.5px solid #0D404F;
+}
+.nl_btns {
+    padding: 7px 23px;
+    position: absolute;
+    border-radius: .3em;
+    top: 3.7px;
+    right: 4px;
+    background-color: #0D404F;
+    color: white;
+    border: 1px solid #0D404F;
+}
+.wpcf7-spinner {
+    background-color: #c99e35;
+    position: absolute !important;
+}
+.wpcf7-spinner {
+    visibility: hidden;
+    display: inline-block;
+    background-color: #23282d;
+    opacity: 0.75;
+    width: 24px;
+    height: 24px;
+    border: none;
+    border-radius: .3em;
+    padding: 0;
+    margin: 0 24px;
+    position: relative;
+}
+.wpcf7-spinner::before {
+    content: '';
+    position: absolute;
+    background-color: #fbfbfc;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    border: none;
+    border-radius: .3em;
+    transform-origin: 8px 8px;
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.wpcf7-not-valid-tip {
+    color: #dc3545;
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    margin-bottom: 5px;
+}
+.contact_title{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    color: #0D404F;
+    margin-top: 3rem;
+    text-transform: uppercase;
+}
+.contact_sous_titre{
+    font-family: 'Blacksword', sans-serif;
+    color: #c99e35;
+    position: relative;
+    top: -1.3rem;
+}
+.paragraph_contact{
+    width: 35rem;
+    margin:37px 18rem;
+}
+/* ///////////////////////////// */
+.footer{
+    background-color: #0D404F;
+    height: 40rem;
+    text-align: center;
+}
+.footer #logo_footer{
+    margin-top: 10rem;
+    width: 8rem;
+}
+.box_footer{
+    display: flex;
+    margin-top: 4rem;
+    color: #fff;
+}
+.box_footer strong{
+    text-transform: uppercase;
+}
+.box_footer ul, .box_footer p{
+    margin-top: 2rem;
+    list-style: none;
+}
+.icons_s{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.footer #copyRight{
+    margin-top: 6rem;
+    color: #fff;
+}
+.copyRight{
+    height: 1rem;
+    background-color: #c99e35;
+}
+.link_footer li a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
