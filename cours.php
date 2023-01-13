@@ -132,7 +132,7 @@
         </div>
     </section>
     <?php include("contact.php");
-          include("footer.php")
+          include("footer.php");
     ?>
 </body>
 

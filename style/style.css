@@ -77,7 +77,7 @@ input[type=checkbox]{
     margin-left: 10px;
     width: 20px;
 }
-.login-button{
+.login-button,.btn_moreinfo{
     text-decoration: none;
     color: #fff;
     background-color: #0D404F;
@@ -95,7 +95,7 @@ input[type=checkbox]{
     margin-left: 25px;
     width: 8.5rem;
 }
-.login-button:hover,.btn_contact:hover{
+.login-button:hover,.btn_contact:hover,.btn_moreinfo:hover{
     border: 1px solid #0D404F;
     background-color: #fff;
     color: #0D404F;
@@ -960,3 +960,110 @@ section.welcome::before {
     border-radius: 50%;
     margin-right: 4rem;
 }
+/* ///////////////cours 1///////////////////////// */
+.header_cour{
+    height: 60vh !important;
+}
+.header .image_header_cours{
+    height: 60vh !important;
+}
+.header .title_cour{
+    top: 31% !important;
+}
+.box_cour{  
+    background-color: #F8F8F8;
+    padding: 5rem;
+}
+.box_cour  .row{
+    align-items: center !important;
+}
+.img_right{
+    padding: 2rem !important;
+    
+}
+.img_right .img_right_header,.line,.more_info{
+    width: 30rem !important;
+    margin-left: 4rem;
+}
+.box_cour > h2,.box_cour_info > h2{
+    font-family: 'Frank Ruhl Libre', serif;
+    color: #0D404F;
+    margin-bottom: 30px;
+}
+.box_cour_info{
+    padding: 5rem;
+}
+p .paragraph2,p .paragraph3{
+    margin-top: 2rem;
+}
+.line{
+    background-color: #c99e35;
+    height: 1rem;
+}
+.more_info{
+    border: 1px solid #F1F1F1;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 1rem;
+}
+.box_info{
+    margin-top: 3rem;
+}
+.box_info table {
+    margin-top: 1rem;
+}
+.box_info table tr th,.box_info h5{
+    padding:0.1rem 0.5rem;
+}
+.box_info table tr td{
+    padding-left: 9rem;
+}
+.box_paragraph{
+    padding: 3rem;
+    font-style: italic;
+}
+.phrase_bottom p span{
+    color: #0549CE;
+    font-size: large;
+}
+.Read_reviews{
+    display: flex;
+    align-items: center;
+}
+.Read_reviews >p{
+    margin-bottom: 0 !important;
+    margin-left: 0.6rem;
+}
+.Read_reviews >p >a{
+    text-decoration: none;
+    color: #0549CE;
+}
+.option{
+    margin-top: 2rem;
+}
+.option > p{
+    margin-bottom: 0 !important;
+}
+.mini_box_option{
+    margin-top: 1rem;
+}
+.mini_box_option2{
+    margin-top: 0.6rem;
+}
+.footer_option{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+.price p{
+    color: #A5A5A5;
+    margin-bottom: 0 !important;
+}
+.price h2{
+    color: #159D83;
+}
+.btn_moreinfo{
+    width: 7.5rem !important;
+}
+
