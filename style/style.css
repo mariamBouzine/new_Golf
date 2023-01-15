@@ -1,9 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/blacksword');
 
-*{
+* {
     box-sizing: border-box;
-}  
-body{
+}
+
+body {
     margin: 0px;
     padding: 0px;
     text-decoration: none;
@@ -11,15 +12,17 @@ body{
 }
 
 /**************** navbar *******************/
-input[type=checkbox]{
+.links input[type=checkbox] {
     display: none;
-} 
+}
+
 .hamburger {
     display: none;
     font-size: 24px;
     user-select: none;
 }
-.nav{
+
+.nav {
     position: fixed;
     top: 0;
     right: 0;
@@ -31,20 +34,23 @@ input[type=checkbox]{
     align-items: center;
     padding: 3px 6% !important;
     /* padding-left: 3px !important; */
-    box-shadow: 0 1px 1px rgb(0 0 0 / 15%), 
-                0 2px 2px rgb(0 0 0 / 15%), 
-                0 4px 4px rgb(0 0 0 / 15%), 
-                0 8px 8px rgb(0 0 0 / 15%);
+    box-shadow: 0 1px 1px rgb(0 0 0 / 15%),
+        0 2px 2px rgb(0 0 0 / 15%),
+        0 4px 4px rgb(0 0 0 / 15%),
+        0 8px 8px rgb(0 0 0 / 15%);
     overflow: hidden;
 }
+
 .nav .icon {
     display: none;
 }
-.nav > .logo{
+
+.nav>.logo {
     width: 9rem;
     height: 2rem;
 }
-.nav > .links > ul li a{
+
+.nav>.links>ul li a {
     color: #0d404f !important;
     line-height: 40px;
     font-size: 15px;
@@ -54,13 +60,15 @@ input[type=checkbox]{
     cursor: pointer;
     margin-left: 5px;
 }
-.nav > .links > ul{
+
+.nav>.links>ul {
     list-style: none;
     position: relative;
     padding: 0;
-    margin-top: 5px;    
+    margin-top: 5px;
 }
-.nav > .links > ul li{
+
+.nav>.links>ul li {
     display: inline-block;
 }
 
@@ -68,16 +76,21 @@ input[type=checkbox]{
     height: 1.5px;
     background: #0D404F;   
 } */
-.nav_box_right{
+.nav_box_right {
     display: flex;
     align-items: center;
-    
+
 }
-.icons_nav{
+
+.icons_nav {
     margin-left: 10px;
     width: 20px;
 }
-.login-button,.btn_moreinfo{
+
+.login-button,
+.btn_moreinfo,
+.Deposit-button,
+.tele_button,.holiday_button,.REVIEW_button {
     text-decoration: none;
     color: #fff;
     background-color: #0D404F;
@@ -90,33 +103,43 @@ input[type=checkbox]{
     display: flex;
     margin: 0;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     align-content: center;
     margin-left: 25px;
     width: 8.5rem;
 }
-.login-button:hover,.btn_contact:hover,.btn_moreinfo:hover{
+
+.login-button:hover,
+.btn_contact:hover,
+.btn_moreinfo:hover,
+.Deposit-button:hover,
+.tele_button:hover,.holiday_button:hover,.REVIEW_button:hover {
     border: 1px solid #0D404F;
     background-color: #fff;
     color: #0D404F;
 }
+
 /**************** header ***************/
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Corinthia:wght@700&family=Merienda&family=Rajdhani:wght@500&display=swap');
-.header{
+
+.header {
     position: relative;
     height: 100vh;
 }
+
 .mySlides {
     display: none;
 }
+
 .box_dot {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    margin:-26rem 1rem;
+    margin: -26rem 1rem;
 }
+
 .dot {
     height: 15px;
     width: 15px;
@@ -127,6 +150,7 @@ input[type=checkbox]{
     display: inline-block;
     transition: background-color 0.6s ease;
 }
+
 .active {
     background-color: #717171;
 }
@@ -146,14 +170,17 @@ input[type=checkbox]{
         opacity: 1
     }
 }
+
 .mySlides img {
     vertical-align: middle;
 }
-.header img{
+
+.header img {
     width: 100%;
     height: 100vh;
 }
-.header .title{
+
+.header .title {
     position: absolute;
     top: 48%;
     left: 30%;
@@ -161,19 +188,23 @@ input[type=checkbox]{
     color: #fff;
     text-align: center;
 }
-.header .title h1{
+
+.header .title h1 {
     font-size: 55px;
     text-transform: uppercase;
     font-family: 'Frank Ruhl Libre', serif;
 }
-.header .title h3{
+
+.header .title h3 {
     position: relative;
     top: -33px;
     font-size: 35px;
     color: #CDAC00;
     font-family: 'Blacksword', sans-serif;
 }
-.box_Decouvrir,.box_Cours{
+
+.box_Decouvrir,
+.box_Cours {
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -182,12 +213,15 @@ input[type=checkbox]{
     background-color: #0D404F;
     color: #fff;
 }
-.box_Decouvrir h1,.box_Cours h1{
+
+.box_Decouvrir h1,
+.box_Cours h1 {
     font-size: 30px;
     font-family: 'Blacksword', sans-serif;
     margin-bottom: 0px !important;
 }
-.btn_decouvrir{
+
+.btn_decouvrir {
     height: 57px;
     background-color: #CDAC00;
     color: #0D404F;
@@ -207,14 +241,19 @@ input[type=checkbox]{
     letter-spacing: 2px;
     gap: 10px;
 }
-.btn_decouvrir img{
+
+.btn_decouvrir img {
     margin-left: 15px;
 }
-.btn_decouvrir:hover::before,.btn_decouvrir:hover::after{
+
+.btn_decouvrir:hover::before,
+.btn_decouvrir:hover::after {
     width: 100%;
     transition: 800ms ease all;
 }
-.btn_decouvrir::before,.btn_decouvrir::after{
+
+.btn_decouvrir::before,
+.btn_decouvrir::after {
     content: '';
     position: absolute;
     top: 0;
@@ -224,33 +263,39 @@ input[type=checkbox]{
     background: #fff;
     transition: 400ms ease all;
 }
+
 .btn_decouvrir:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
 }
+
 .btn_decouvrir:hover {
     color: #fff;
     background: transparent;
     box-shadow: none;
     border: none;
 }
+
 .arrow_link {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .bounce {
     -moz-animation: bounce 2s infinite;
     -webkit-animation: bounce 2s infinite;
     animation: bounce 2s infinite;
 }
+
 .arrow {
     text-align: center;
     margin: 8% 0;
 }
+
 .slider_title {
     text-align: center;
     font-family: 'Frank Ruhl Libre';
@@ -263,25 +308,31 @@ input[type=checkbox]{
     text-shadow: -1px 1px 3px #000;
     color: #FFFFFF;
 }
-.icon_btn{
+
+.icon_btn {
     color: #0D404F;
     font-size: 30px;
 }
-.icon_btn2{
+
+.icon_btn2 {
     color: #fff;
     font-size: 30px;
 }
+
 /* ////////about ///////////// */
 .layout_padding {
     padding-top: 90px;
     padding-bottom: 90px;
 }
+
 .about_section .img_container .img-box img {
     width: 100%;
 }
-.img_container{
+
+.img_container {
     margin-left: -45px;
 }
+
 .heading_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,12 +343,14 @@ input[type=checkbox]{
     flex-direction: column;
     position: relative;
 }
+
 .about_section .detail-box {
     background-color: #ffffff;
     padding: 44px 25px;
     position: relative;
     top: 4.8vh;
 }
+
 .heading_container h2 {
     position: relative;
     font-size: 30px;
@@ -307,24 +360,30 @@ input[type=checkbox]{
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 600;
 }
-.heading_container h3{
+
+.heading_container h3 {
     color: #CDAC00;
     position: absolute;
     font-size: 35px;
     top: 20px;
     font-family: 'Blacksword', sans-serif;
 }
+
 .about_section .detail-box p {
     margin-top: 20px;
 }
-.box_btn_1{
+
+.box_btn_1 {
     margin-top: 3rem;
 }
-.box_btn_1,.box_btn_2{
+
+.box_btn_1,
+.box_btn_2 {
     display: flex;
 }
 
-.btn_propos ,.btn_voyages{
+.btn_propos,
+.btn_voyages {
     background-color: #CDAC00;
     color: #0D404F;
     text-decoration: none;
@@ -341,30 +400,35 @@ input[type=checkbox]{
     margin-left: 25px;
     width: 9rem;
 }
-.btn_Votre,.btn_Inscriptio{
-   border: 1px solid #0D404F;
-   color: #0D404F;
-   text-decoration: none;
-   border-radius: .3em;
-   padding: 0.4rem 1rem;
-   padding-bottom: 10px;
-   font-size: 1rem;
-   cursor: pointer;
-   display: flex;
-   justify-content: space-between;
-   margin: 0;
-   align-items: center;
-   align-content: center;
-   margin-left: 25px;
-   width: 10rem;
+
+.btn_Votre,
+.btn_Inscriptio {
+    border: 1px solid #0D404F;
+    color: #0D404F;
+    text-decoration: none;
+    border-radius: .3em;
+    padding: 0.4rem 1rem;
+    padding-bottom: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+    align-content: center;
+    margin-left: 25px;
+    width: 10rem;
 }
-.btn_propos:hover{
+
+.btn_propos:hover {
     color: #0D404F;
     background: transparent;
     box-shadow: none;
     border: none;
 }
-.btn_propos:before, .btn_propos:after {
+
+.btn_propos:before,
+.btn_propos:after {
     content: '';
     position: absolute;
     top: 0;
@@ -374,16 +438,20 @@ input[type=checkbox]{
     background: #0D404F;
     transition: 400ms ease all;
 }
+
 .btn_propos:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
 }
-.btn_propos:hover::before,.btn_propos:hover::after{
+
+.btn_propos:hover::before,
+.btn_propos:hover::after {
     width: 100%;
     transition: 800ms ease all;
 }
+
 .btn_Votre {
     background-color: transparent;
     color: #0D404F;
@@ -398,19 +466,22 @@ input[type=checkbox]{
     text-transform: unset;
     gap: 10px;
 }
-.btn_Votre:hover path{
+
+.btn_Votre:hover path {
     fill: #fff !important;
     color: #fff !important;
 
 }
-.btn_Votre:hover{
-  box-shadow: inset 0 0 0 2em  #0D404F;
-  background-color: #0D404F;
-  color: #fff !important;
-  fill: white !important;
+
+.btn_Votre:hover {
+    box-shadow: inset 0 0 0 2em #0D404F;
+    background-color: #0D404F;
+    color: #fff !important;
+    fill: white !important;
 }
+
 /* /////////////////////////////////// */
-.box{
+.box {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -418,58 +489,70 @@ input[type=checkbox]{
     margin-top: 150px;
     margin-bottom: 90px;
 }
-.box_{
+
+.box_ {
     background-size: contain !important;
 }
-.box_img_Inscription{
-    
+
+.box_img_Inscription {
+
     height: 70vh;
 }
-.box_img_Inscription img{
+
+.box_img_Inscription img {
     width: 100%;
     height: 70vh;
 }
-.box_content{
+
+.box_content {
     background-color: white;
     padding: 50px;
     margin-top: 370px;
 }
-.box_content p{
+
+.box_content p {
     margin-top: 5%;
 }
-.box_content h1{
+
+.box_content h1 {
     font-family: 'Frank Ruhl Libre', serif;
     color: #0D404F;
     text-transform: uppercase;
     font-weight: 600;
 }
-.box_content h3{
+
+.box_content h3 {
     font-family: 'Blacksword', sans-serif;
     color: #CDAC00;
     position: relative;
     top: -25px;
     font-size: 3.5rem;
 }
-.box_btn_2{
+
+.box_btn_2 {
     justify-content: center;
     margin-top: 5rem;
     margin-bottom: 4rem;
 }
-.btn_voyages{
+
+.btn_voyages {
     padding: 12px 17px;
     width: 11rem;
 }
+
 /* //////////////////////////// */
 .voyage_h {
     background: rgba(13, 64, 79, 0.38);
     padding: 10px;
     width: 65%;
 }
+
 .voyage_dec {
     color: #fff;
     padding: 50px;
     background: rgba(13, 64, 79, 0.77);
 }
+
 /* .services_voyage_title {
     color: #fff;
     font-family: 'Frank Ruhl Libre', serif;
@@ -489,6 +572,7 @@ input[type=checkbox]{
     align-items: center;
     color: #CDAC00;
 }
+
 /* .services1_desc {
     color: #fff;
     letter-spacing: 0.2px;
@@ -497,7 +581,7 @@ input[type=checkbox]{
     text-align: justify;
     font-weight: 400;
 } */
-.btn_coach{
+.btn_coach {
     border: 1px solid #fff;
     background-color: transparent;
     color: #fff;
@@ -513,14 +597,17 @@ input[type=checkbox]{
     text-transform: unset;
     gap: 10px;
 }
-.btn_coach:hover{
+
+.btn_coach:hover {
     background-color: #CDAC00;
     border-color: #CDAC00;
     color: #fff !important;
     fill: white !important;
-    box-shadow: inset 0 0 0 2em  #CDAC00;
-    }
-.btn_propos,.btn_propos2{
+    box-shadow: inset 0 0 0 2em #CDAC00;
+}
+
+.btn_propos,
+.btn_propos2 {
     padding: 12px 22px;
     width: 11rem;
     transition: all .3s ease-in-out;
@@ -547,7 +634,8 @@ input[type=checkbox]{
     gap: 10px;
 }
 
-.btn_propos2:before, .btn_propos2:after {
+.btn_propos2:before,
+.btn_propos2:after {
     content: '';
     position: absolute;
     top: 0;
@@ -557,24 +645,29 @@ input[type=checkbox]{
     background: #fff;
     transition: 400ms ease all;
 }
+
 .btn_propos2:after {
     right: inherit;
     top: inherit;
     left: 0;
     bottom: 0;
 }
-.btn_propos2:hover{
+
+.btn_propos2:hover {
     color: #fff;
     background: transparent;
-     box-shadow:none;
-     border: none;
+    box-shadow: none;
+    border: none;
 }
-.btn_propos2:hover::before,.btn_propos2:hover::after{
+
+.btn_propos2:hover::before,
+.btn_propos2:hover::after {
     width: 100%;
     transition: 800ms ease all;
 }
+
 /* ///////////////////////////// */
-.img_box{
+.img_box {
     position: relative;
     /* width: 50%; */
     background-size: contain;
@@ -583,10 +676,12 @@ input[type=checkbox]{
     background-position: inherit !important;
     min-height: 710px;
 }
-.about_section2{  
+
+.about_section2 {
     margin-bottom: 300px;
 }
-.about_section .about_content{
+
+.about_section .about_content {
     position: relative;
     min-height: 440px;
     top: 50%;
@@ -597,6 +692,7 @@ input[type=checkbox]{
     transform: translateY(-50%);
     padding: 32px 54px;
 }
+
 /* ///////////////////////////////// */
 section.welcome {
     min-height: 560px;
@@ -610,6 +706,7 @@ section.welcome {
     position: relative;
     /* margin-top: -200px; */
 }
+
 section.welcome::before {
     content: '';
     left: 0;
@@ -619,6 +716,7 @@ section.welcome::before {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
 }
+
 .services_voyage_title {
     color: #fff;
     font-family: 'Frank Ruhl Libre', serif;
@@ -627,6 +725,7 @@ section.welcome::before {
     position: relative;
     font-weight: 700;
 }
+
 .sous_titre {
     position: relative;
     font-family: 'Blacksword', sans-serif;
@@ -640,6 +739,7 @@ section.welcome::before {
     align-items: center;
     color: #CDAC00;
 }
+
 .services1_desc {
     position: relative;
     color: #fff;
@@ -650,6 +750,7 @@ section.welcome::before {
     font-weight: 400;
     margin-top: 45px;
 }
+
 .btn_services_1 {
     height: 65px;
     background-color: #CDAC00;
@@ -670,15 +771,18 @@ section.welcome::before {
     letter-spacing: 2px;
     gap: 10px;
 }
+
 .btn_services_right_1 {
     position: relative;
 }
+
 /* ///////////////////////////// */
-.cards{
+.cards {
     margin-top: 7rem !important;
     margin-bottom: 7rem;
 }
-.card{
+
+.card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -690,15 +794,18 @@ section.welcome::before {
     position: relative;
     cursor: pointer;
 }
-.card:hover .footer_card{
+
+.card:hover .footer_card {
     opacity: 0;
     height: 0%;
 }
-.card:hover .details{
+
+.card:hover .details {
     opacity: 1;
     height: 100%;
 }
-.details{
+
+.details {
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -714,26 +821,31 @@ section.welcome::before {
     padding: 3rem;
     /* position: relative; */
 }
-.details p{
+
+.details p {
     font-size: 15px;
     margin-bottom: 4rem;
     margin-top: 3rem;
 }
-.details .card_title{
+
+.details .card_title {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 600;
-   
+
 }
-.details .card_title{
+
+.details .card_title {
     font-size: 25px;
 }
-.details .card_sous_titre{
+
+.details .card_sous_titre {
     font-family: 'Blacksword', sans-serif;
     position: absolute;
     top: 4.4rem;
     color: #CDAC00;
 }
-.footer_card{
+
+.footer_card {
     background: rgba(13, 64, 79, 1);
     text-align: center;
     color: #fff;
@@ -744,51 +856,60 @@ section.welcome::before {
     padding: 10px;
     margin-bottom: 0%;
 }
-.card h4{
+
+.card h4 {
     width: 4rem;
     color: #fff;
     text-align: center;
 }
-.footer_card p{
+
+.footer_card p {
     margin-bottom: 0px;
 }
-.card_btn{
+
+.card_btn {
     margin-left: 0% !important;
     width: 11rem;
 }
+
 /* /////////////////////////////// */
-.services{
+.services {
     text-align: center;
     color: #fff;
     background-color: #0D404F;
     height: 21rem;
-    
+
 }
-.services .services_title{
+
+.services .services_title {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 600;
     position: relative;
     top: 30px;
 }
-.services_sous_titre{
+
+.services_sous_titre {
     font-family: 'Blacksword', sans-serif;
     position: relative;
     top: 0.7rem;
     color: #CDAC00;
 }
+
 /* ///////////////////////////////// */
-.contact{
+.contact {
     margin: 0px 6rem;
     text-align: center;
     background-color: #fff;
     position: relative;
     top: 7rem;
 }
+
 .frm-concact {
     position: relative;
     width: fit-content;
     margin-bottom: 70px;
 }
+
 .nl_email {
     width: 35rem;
     padding: 14px;
@@ -796,6 +917,7 @@ section.welcome::before {
     font-size: 12px;
     border: 0.5px solid #0D404F;
 }
+
 .nl_btns {
     padding: 7px 23px;
     position: absolute;
@@ -806,10 +928,12 @@ section.welcome::before {
     color: white;
     border: 1px solid #0D404F;
 }
+
 .wpcf7-spinner {
     background-color: #c99e35;
     position: absolute !important;
 }
+
 .wpcf7-spinner {
     visibility: hidden;
     display: inline-block;
@@ -823,6 +947,7 @@ section.welcome::before {
     margin: 0 24px;
     position: relative;
 }
+
 .wpcf7-spinner::before {
     content: '';
     position: absolute;
@@ -839,6 +964,7 @@ section.welcome::before {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
 .wpcf7-not-valid-tip {
     color: #dc3545;
     font-size: 12px;
@@ -846,224 +972,557 @@ section.welcome::before {
     display: block;
     margin-bottom: 5px;
 }
-.contact_title{
+
+.contact_title {
     font-family: 'Frank Ruhl Libre', serif;
     font-weight: 600;
     color: #0D404F;
     margin-top: 3rem;
     text-transform: uppercase;
 }
-.contact_sous_titre{
+
+.contact_sous_titre {
     font-family: 'Blacksword', sans-serif;
     color: #c99e35;
     position: relative;
     top: -1.3rem;
 }
-.paragraph_contact{
+
+.paragraph_contact {
     width: 35rem;
-    margin:37px 18rem;
+    margin: 37px 18rem;
 }
+
 /* ///////////////////////////// */
-.footer{
+.footer {
     background-color: #0D404F;
     height: 40rem;
     text-align: center;
 }
-.footer #logo_footer{
+
+.footer #logo_footer {
     margin-top: 10rem;
     width: 8rem;
 }
-.box_footer{
+
+.box_footer {
     display: flex;
     margin-top: 4rem;
     color: #fff;
 }
-.box_footer strong{
+
+.box_footer strong {
     text-transform: uppercase;
 }
-.box_footer ul, .box_footer p{
+
+.box_footer ul,
+.box_footer p {
     margin-top: 2rem;
     list-style: none;
 }
-.icons_s{
+
+.icons_s {
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
 }
-.footer #copyRight{
+
+.footer #copyRight {
     margin-top: 6rem;
     color: #fff;
 }
-.copyRight{
+
+.copyRight {
     height: 1rem;
     background-color: #c99e35;
 }
-.link_footer li a{
+
+.link_footer li a {
     text-decoration: none !important;
     color: #fff !important;
 }
+
 /* /////////////////////////////////////page cours//////////////////////////// */
-.box_Cours{
+.box_Cours {
     padding: 0.6rem 4rem;
 }
-.box_typeCours{
+
+.box_typeCours {
     margin-top: 2rem;
     /* padding: 2rem 6rem; */
 }
-.type_Cours{
+
+.type_Cours {
     justify-content: space-evenly !important;
 }
-.type_Cours:hover{
+
+.type_Cours:hover {
     background-color: #F8F8F8;
 }
-.type_Cours:hover .btn_icon_cour{
+
+.type_Cours:hover .btn_icon_cour {
     background-color: #F8F8F8;
     display: flex;
     align-items: center;
 }
-.numbr_cour{ 
+
+.numbr_cour {
     text-align: center;
     display: flex;
     align-items: center;
 }
-.img_cour,.text_cour,.numbr_cour{
+
+.img_cour,
+.text_cour,
+.numbr_cour {
     padding: 2rem;
 }
-.numbr_cour h1{
+
+.numbr_cour h1 {
     margin-left: 3rem;
 }
-.text_cour h2{
+
+.text_cour h2 {
     font-family: 'Frank Ruhl Libre', serif;
     margin-bottom: 1rem;
     font-weight: 600;
-    
+
 }
-.text_cour p{
-   padding-right: 2rem
+
+.text_cour p {
+    padding-right: 2rem
 }
-.box_icons_cours img{
+
+.box_icons_cours img {
     margin-left: 0.7rem;
     border: 2px solid #E5E5E5;
     padding: 0.6rem 11px;
     border-radius: 50%;
     margin-top: 0.5rem;
 }
-.btn_icon_cour{
+
+.btn_icon_cour {
     display: none;
     /* display: flex;
     align-items: center; */
 }
-.btn_icon_cour a{
+
+.btn_icon_cour a {
     border: 1px solid #0D404F;
     background-color: #0D404F;
     border-radius: 50%;
     margin-right: 4rem;
 }
+
 /* ///////////////cours 1///////////////////////// */
-.header_cour{
+.header_cour {
     height: 60vh !important;
 }
-.header .image_header_cours{
+
+.header .image_header_cours {
     height: 60vh !important;
 }
-.header .title_cour{
+
+.header .title_cour {
     top: 31% !important;
 }
-.box_cour{  
+
+.box_cour {
     background-color: #F8F8F8;
     padding: 5rem;
 }
-.box_cour  .row{
+
+.box_cour .row {
     align-items: center !important;
 }
-.img_right{
+
+.img_right {
     padding: 2rem !important;
-    
+
 }
-.img_right .img_right_header,.line,.more_info{
+
+.img_right .img_right_header,
+.line,
+.more_info {
     width: 30rem !important;
     margin-left: 4rem;
 }
-.box_cour > h2,.box_cour_info > h2{
+
+.box_cour>h2,
+.box_cour_info>h2 {
     font-family: 'Frank Ruhl Libre', serif;
     color: #0D404F;
     margin-bottom: 30px;
 }
-.box_cour_info{
+
+.box_cour_info {
     padding: 5rem;
 }
-p .paragraph2,p .paragraph3{
+
+p .paragraph2,
+p .paragraph3 {
     margin-top: 2rem;
 }
-.line{
+
+.line {
     background-color: #c99e35;
     height: 1rem;
 }
-.more_info{
+
+.more_info {
     border: 1px solid #F1F1F1;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     padding: 1rem;
 }
-.box_info{
+
+.box_info {
     margin-top: 3rem;
 }
+
 .box_info table {
     margin-top: 1rem;
 }
-.box_info table tr th,.box_info h5{
-    padding:0.1rem 0.5rem;
+
+.box_info table tr th,
+.box_info h5 {
+    padding: 0.1rem 0.5rem;
 }
-.box_info table tr td{
+
+.box_info table tr td {
     padding-left: 9rem;
 }
-.box_paragraph{
+
+.box_paragraph {
     padding: 3rem;
     font-style: italic;
 }
-.phrase_bottom p span{
+
+.phrase_bottom p span {
     color: #0549CE;
     font-size: large;
 }
-.Read_reviews{
+
+.Read_reviews {
     display: flex;
     align-items: center;
 }
-.Read_reviews >p{
+
+.Read_reviews>p {
     margin-bottom: 0 !important;
     margin-left: 0.6rem;
 }
-.Read_reviews >p >a{
+
+.Read_reviews>p>a {
     text-decoration: none;
     color: #0549CE;
 }
-.option{
+
+.option {
     margin-top: 2rem;
 }
-.option > p{
+
+.option>p {
     margin-bottom: 0 !important;
 }
-.mini_box_option{
+
+.mini_box_option {
     margin-top: 1rem;
 }
-.mini_box_option2{
+
+.mini_box_option2 {
     margin-top: 0.6rem;
 }
-.footer_option{
+
+.footer_option {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 3rem;
 }
-.price p{
+
+.price p {
     color: #A5A5A5;
     margin-bottom: 0 !important;
 }
-.price h2{
+
+.price h2 {
     color: #159D83;
 }
-.btn_moreinfo{
+
+.btn_moreinfo {
     width: 7.5rem !important;
 }
 
+/* //////////////////////////////////// */
+.box_Deposit {
+    margin-top: 5rem;
+}
+
+.Deposit-button {
+    padding: 0.6rem 1rem;
+    width: 20.5rem;
+    padding-bottom: 13px;
+    margin-left: 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.paragraph1 {
+    margin-top: 1rem;
+}
+
+.Deposit-button img {
+    margin-left: 1.7rem;
+}
+
+.box_Offers {
+    background-color: #F8F8F8;
+    padding: 2rem;
+    margin-top: 4rem;
+}
+
+.box_Offers h2,.box_Deposit h2 {
+    margin: 4rem 0;
+    color: #595959;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+}
+
+.box_date label {
+    font-weight: 500;
+    color: #595959;
+    margin-right: 2rem;
+    font-size: 22px;
+}
+
+.box_date {
+    margin-bottom: 2rem;
+}
+
+.box_date input {
+    padding: 0.6rem;
+    border: 1px solid #D9D9D9;
+}
+
+.box_date input::placeholder,
+.input_form input::placeholder {
+    color: #BABABA;
+}
+
+._box_contact {
+    margin-top: 3rem;
+}
+
+._contact {
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+}
+
+.tele_button {
+    margin-top: 3rem !important;
+    margin: 25px 13em;
+    width: 11.5rem;
+    padding-top: 10px;
+}
+
+.tele_button img {
+    margin-right: 10px;
+}
+
+.contact_line,.holiday_line  {
+    height: 10px;
+    background-color: #c99e35;
+}
+
+#paragraph_buttom {
+    margin-bottom: 0 !important;
+}
+
+#paragraph_top {
+    color: #595959;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box_holiday {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    box-shadow: -1px 6px 5px -2px rgba(0, 0, 0, 0.1);
+}
+.form_holiday{
+    margin-top: 5rem;
+}
+.input_form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.input_form input{
+    width: 8rem;
+}
+.input_form input,
+.input_form select {
+    padding: 0.4rem;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+}
+.selectdiv {
+    width: 4rem !important;
+}
+.title_holiday{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 22px;
+    color: #595959;
+    font-weight: 400;
+}
+.form-check{
+    margin-top: 2rem;
+    padding-left:0 !important;
+}
+.form-check label{
+    color: #595959;
+    margin-left: 5px;
+}
+.Edinburgh{
+    margin-top: 2rem !important;
+}
+.form-select option.selected{
+   color: #BABABA !important;
+}
+.holiday_button{
+    width: 15rem;
+    margin: 2rem auto;
+    padding: 9px 1rem;
+}
+.holiday_button img{
+    margin-left: 3rem;
+}
+#holiday_parag{
+    text-align: center;
+    color: #595959;
+}
+.holiday_line{
+    width: 93%;
+    margin-left: 2rem;
+}
+#map {
+    margin: 3rem 0;
+    height: 400px; 
+    width: 100%; 
+}
+.box_Reviews{
+    display: flex;
+    justify-content: space-between;
+}
+.title_Reviews h2{
+    color: #0D404F;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+}
+.title_Reviews p{
+    margin-top: 1.5rem;
+    font-weight: 500;
+    color: #585858;
+    font-size: 20px;
+}
+.section_Reviews{
+    background-color: #F8F8F8;
+}
+._Reviews{
+    padding: 4rem 4rem 2rem 4rem;
+}
+._Reviews_date{
+    color: #0D404F;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.evaluation {
+    display: flex;
+    align-items: baseline;
+}
+.evaluation img{
+    width: 30px;
+    height: 30px;
+    margin-left: 0.3rem;
+}
+.evaluation p{
+    margin-left: 1rem;
+    color: #0D404F;
+    font-weight: 600;
+    font-family: 'Frank Ruhl Libre', serif;
+}
+.evaluation_person{
+    border: 1px solid #C4C4C4;
+    padding: 0.5rem 1rem;
+    border-radius: 27px;
+    width: 12rem;
+}
+.name_per{
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 1px 7px;
+    font-weight: 500;
+    color: #2B2B2B;
+}
+.lname_per{
+    margin-left: 0.6rem;
+    font-weight: 900;
+    color: #2B2B2B;
+}
+.box_like{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    margin-top: 2rem;
+}
+.box_like .like{
+    border: 1px solid #C4C4C4;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 3px 9px 11px 11px;
+}
+.box_like .dislike{
+    border: 1px solid #C4C4C4;
+    background-color: #fff;
+    border-radius: 50%;
+    padding:6px 9px 8px 11px;
+    margin-left: 15px;
+}
+._Reviews_line{
+    height: 1px;
+    background-color: #D9D9D9;
+}
+.box_comments h2{
+    color: #595959;
+    font-family: 'Frank Ruhl Libre', serif;
+    margin-bottom: 1rem;
+}
+.box_comments p{
+    color: #9C9C9C;
+    font-size: 20px;
+    margin-bottom: 3.4rem;
+}
+.box_comments a{
+    color: #000;
+}
+.line_v{
+    border-left: 1px solid #D9D9D9;
+    height: 191px;
+    margin: 0 auto;
+    margin-left: 5rem;
+}
+.REVIEW_button{
+    width: 13rem;
+}
+.REVIEW_button img{
+    margin-right: 1rem;
+    margin-top: 5px;
+}
